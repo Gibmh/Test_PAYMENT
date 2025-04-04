@@ -1,0 +1,50 @@
+.order-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    /* Khoảng cách giữa các mục */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 100%;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    /* Cho phép quấn xuống nếu không đủ không gian */
+}
+.order-detail {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    /* Khoảng cách giữa các item */
+}
+
+.order-detail strong {
+    margin-right: 5px;
+}
+.order-container h2 {
+    display: flex;
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    justify-content: space-between;
+    /* Giãn cách giữa tiêu đề và nút */
+    
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.delete-button {
+    height: 30px;
+    width: 30px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    /* Đảm bảo khoảng cách hợp lý giữa chữ và nút */
+}
