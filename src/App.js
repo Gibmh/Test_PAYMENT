@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import InputForm from "./components/input";
 import Order from "./components/object";
 import "./App.css";
-require("dotenv").config();
 
 const App = () => {
   const [products, setProducts] = useState([]);
@@ -16,7 +15,7 @@ const App = () => {
   };
   const fetchInvoices = async () => {
     try {
-      const response = await fetch(process.env.API_list); // API lấy danh sách hóa đơn
+      const response = await fetch(process.env.REACT_APP_API_LIST); // API lấy danh sách hóa đơn
       if (response.ok) {
         const result = await response.json();
         if (result.success) {
@@ -82,7 +81,7 @@ const App = () => {
     };
 
     try {
-      const response = await fetch(process.env.API_create, {
+      const response = await fetch(process.env.REACT_APP_API_CREATE, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
